@@ -467,10 +467,46 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="button" data-modal-open>
-          <svg id="modal-close" width="30px" height="30px">
+          <svg id="modal-close" width="11px" height="11px">
             <use href="./images/icons.svg#modal-close"></use>
           </svg>
         </button>
+       
+        <form class="form-field">
+          <h3>Оставьте свои данные, мы вам перезвоним</h3>
+          <label>
+            Имя
+            <div class="field-input">
+              <input type="text" name="username">
+              <svg id="name" class="name" width="12px" height="12px">
+                <use href="./images/icons.svg#name"></use>
+              </svg>
+            </div>
+          </label>
+          <label>
+            Телефон
+            <div class="field-input">
+               <input type="tel" name="phone-number">
+               <svg id="tel" class="telephone" width="13px" height="13px">
+                 <use href="./images/icons.svg#tel"></use>
+               </svg>
+            </div>
+          </label>
+          <label>
+              Почта
+              <div class="field-input">
+                 <input type="email" name="email">
+                 <svg id="email" class="email" width="15px" height="12px">
+                   <use href="./images/icons.svg#email"></use>
+                </svg>
+              </div>
+          </label>
+          <label>
+            Комментарий
+            <textarea name="comment" id="comment" placeholder="Введите текст"></textarea>
+          </label>
+        </form>
+
       </div>
     </div>
     <script src="./js/modal.js"></script>

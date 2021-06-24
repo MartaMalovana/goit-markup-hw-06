@@ -634,6 +634,7 @@ form button {
 
 form .signup {
   margin-left: 10px;
+  fill: var(--white-color);
 } 
 
 /*filters portfolio*/
@@ -820,6 +821,8 @@ a.portfolio-item {
 .modal .button {
   position: absolute;
   display: flex;
+  align-items: center;
+  justify-content: center;
   top: 8px;
   right: 8px;
   min-width: 30px;
@@ -829,4 +832,70 @@ a.portfolio-item {
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-shadow: none;
   background-color: var(--white-color);
+}
+
+.modal .button:hover,
+.modal .button:focus {
+fill: var(--accent-text-color);
+}
+
+.form-field {
+  padding: 40px;
+  font-size: 12px;
+  line-height: 1.172;
+  letter-spacing: 0.01em;
+}
+
+.form-field input {
+  min-width: 448px;
+  min-height: 40px;
+  padding-left: 42px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition: border 250ms;
+}
+
+.form-field textarea {
+  min-width: 448px;
+  min-height: 120px;
+  margin-top: 4px;
+  margin-bottom: 20px;
+  padding: 12px 16px;
+  resize: none;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.form-field h3 {
+font-size: 20px;
+line-height: 1.172;
+color: var(--secondary-text-color);
+text-transform: none;
+text-align: center;
+margin-top: 0;
+margin-bottom: 12px;
+}
+
+.form-field textarea::placeholder {
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.field-input {
+  position: relative;
+  margin-top: 4px;
+  margin-bottom: 10px;
+}
+
+.field-input .input:focus-within {
+  border: 1px solid var(--accent-text-color);
+  transform: var(--cubic);
+}
+
+label .name,
+label .telephone,
+label .email {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
 }
