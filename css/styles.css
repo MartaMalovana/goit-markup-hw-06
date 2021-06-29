@@ -866,7 +866,7 @@ fill: var(--accent-text-color);
   border-radius: 4px;
 }
 
-.form-field h3 {
+.form-field p {
 font-size: 20px;
 line-height: 1.172;
 color: var(--secondary-text-color);
@@ -874,6 +874,8 @@ text-transform: none;
 text-align: center;
 margin-top: 0;
 margin-bottom: 12px;
+font-weight: 700;
+letter-spacing: 0.03em;
 }
 
 .form-field textarea::placeholder {
@@ -886,9 +888,11 @@ margin-bottom: 12px;
   margin-bottom: 10px;
 }
 
-.field-input .input:focus-within {
+.field-input:focus+.field {
   border: 1px solid var(--accent-text-color);
   transform: var(--cubic);
+  background-color: var(--accent-text-color);
+
 }
 
 label .name,
@@ -898,4 +902,40 @@ label .email {
   left: 15px;
   top: 50%;
   transform: translateY(-50%);
+}
+
+.checkbox .accept {
+  border-color: var(--secondary-text-color);
+  min-width: 16px;
+  min-height: 15px;
+  margin-right: 8.38px;
+  appearance: none ;
+}
+
+.customer-accept {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+}
+
+.customer-accept a{
+  color: var(--accent-text-color);
+  margin-left: 3px;
+}
+
+.form-field button {
+  background-color: var(--accent-text-color);
+  box-shadow: rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  width: 200px;
+  height: 50px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  margin-left: auto;
+  margin-right: auto;
 }

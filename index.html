@@ -473,7 +473,7 @@
         </button>
        
         <form class="form-field">
-          <h3>Оставьте свои данные, мы вам перезвоним</h3>
+          <p>Оставьте свои данные, мы вам перезвоним</p>
           <label>
             Имя
             <div class="field-input">
@@ -486,9 +486,9 @@
           <label>
             Телефон
             <div class="field-input">
-               <input type="tel" name="phone-number">
-               <svg id="tel" class="telephone" width="13px" height="13px">
-                 <use href="./images/icons.svg#tel"></use>
+               <input type="tel" name="phone-number" class="field">
+               <svg id="tel" class="telephone" width="18px" height="18px">
+                 <use href="./images/icons.svg#phone"></use>
                </svg>
             </div>
           </label>
@@ -505,6 +505,15 @@
             Комментарий
             <textarea name="comment" id="comment" placeholder="Введите текст"></textarea>
           </label>
+          <div class="customer-accept">
+            <label class="checkbox">
+              <input type="checkbox" name="accept" class="accept">
+            </label>
+            <p>Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></p>
+          </div>
+          <button type="submit">
+            Отправить
+          </button>
         </form>
 
       </div>
